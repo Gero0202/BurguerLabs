@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Kanit, Dancing_Script } from "next/font/google";
+import Contenedor from "./components/Contenedor";
 
 const kanit = Kanit({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function Home() {
           <button>Go!</button>
         </div>
       </div>
+      {/* <Contenedor/> */}
     </>
   );
 }
