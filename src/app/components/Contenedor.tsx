@@ -1,5 +1,6 @@
 // components/MenuCard.jsx
 import React, { ReactNode } from 'react';
+import CodeTabs from './CodeTabs';
 
 interface MenuCardsProps {
     title: string;
@@ -27,7 +28,12 @@ const MenuCard: React.FC<MenuCardsProps> = ({
 
             <h3 className="menu-title">{title}</h3>
             <div className="code-container">
-                {/* aca va tu componente de pestañas con el codigo */}
+                <CodeTabs
+                reactCode={reactCode}
+                javascriptCode={javascriptCode}
+                htmlCode={htmlcode}
+                cssCode={cssCode}
+                />
             </div>
         </div>
     );
