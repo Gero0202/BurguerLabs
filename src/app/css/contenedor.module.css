@@ -3,7 +3,7 @@
   color: white;
   padding: 2rem;
   width: 100%;
-  max-width: 860px;
+  max-width: 777px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
   border-radius: 12px;
-  height: 851px;
+  height: 802px;
   overflow-y: visible;
   justify-content: space-between;
 }
