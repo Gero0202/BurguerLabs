@@ -16,13 +16,13 @@ const CodeTabs: React.FC<CoderTabsProps> = ({ reactCode, javascriptCode, cssCode
     const renderCode = () => {
         switch (activeTab) {
             case 'react':
-                return <pre><code>{reactCode}</code></pre>
+                return <pre><p>{reactCode}</p></pre>
             case 'javascript':
-                return <pre><code>{javascriptCode}</code></pre>
+                return <pre><p>{javascriptCode}</p></pre>
             case 'html':
-                return <pre><code>{htmlCode}</code></pre>
+                return <pre><p>{htmlCode}</p></pre>
             case 'css':
-                return <pre><code>{cssCode}</code></pre>
+                return <pre><p>{cssCode}</p></pre>
             default:
                 break;
         }

@@ -1,6 +1,6 @@
 .div-home-principal {
   position: relative;
-  min-height: 100vh;
+  min-height: 102vh;
   background: linear-gradient(to bottom, black 50%, white 50%);
   display: flex;
   flex-direction: column;

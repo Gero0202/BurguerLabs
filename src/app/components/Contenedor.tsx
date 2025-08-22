@@ -1,6 +1,6 @@
-// components/MenuCard.jsx
 import React, { ReactNode } from 'react';
 import CodeTabs from './CodeTabs';
+import styles from "@/app/css/contenedor.module.css"
 
 interface MenuCardsProps {
     title: string;
@@ -20,14 +20,13 @@ const MenuCard: React.FC<MenuCardsProps> = ({
     children 
 }) => {
     return (
-        <div className="menu-card">
-            {/* El componente del menu de hamburguesas se renderiza aca, en el lugar de {children} */}
-            <div className="menu-preview-interactive">
+        <div className={styles["menu-card"]}>
+            <div className={styles["menu-preview-interactive"]}>
                 {children}
             </div>
 
-            <h3 className="menu-title">{title}</h3>
-            <div className="code-container">
+            <h3 className={styles["menu-title"]}>{title}</h3>
+            <div className={styles["code-container"]}>
                 <CodeTabs
                 reactCode={reactCode}
                 javascriptCode={javascriptCode}

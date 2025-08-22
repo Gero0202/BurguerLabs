@@ -38,8 +38,8 @@ export const menuData = [
           export default MenuClasico;  
         `,
         javascripCode: `
-           const menuButton = document.getElementById('menuButton');
-            const menuNav = document.getElementById('menuNav');
+          const menuButton = document.getElementById('menuButton');
+          const menuNav = document.getElementById('menuNav');
 
             menuButton.addEventListener('click', () => {
               if (menuNav.style.display === 'none') {
@@ -87,16 +87,16 @@ export const menuData = [
         }
 
        button {
-       background: none;
-       border: none;
-       cursor: pointer;
-       padding: 10px;
-      }
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 10px;
+         }
 
-      nav {
-      /* Estilos para la barra de navegación que se muestra */
-      /* Por ejemplo, display: flex; flex-direction: column; */
-      }
+       nav {
+         /* Estilos para la barra de navegación que se muestra */
+         /* Por ejemplo, display: flex; flex-direction: column; */
+         }
       `
     },
     {
