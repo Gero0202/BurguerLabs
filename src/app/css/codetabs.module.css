@@ -6,22 +6,19 @@
 .code-content {
   width: 100%;
   height: 530px;
-  background-color: #1e1e1e; /* como editor */
-  border-radius: 8px;
-  padding: 6px;
-  margin-top: 1rem;
-  overflow-x: auto; /* scroll solo si es necesario */
+  background-color: #1e1e1e; 
+  overflow-x: auto;
   overflow-y: auto;
 }
 
-/* Para los bloques de código */
+
 .code-content pre {
-   margin: 0;               /* elimina márgenes extra */
+   margin: 0;               
   padding: 0;   
-  height: 100%;           /* elimina padding interno */
-  white-space: pre;        /* mantiene formato del código */
-  overflow-x: auto;        /* scrollea solo si se pasa */
-  text-align: left;       /* 🔑 alinea el código hacia la derecha */
+  height: 100%;          
+  white-space: pre;        
+  overflow-x: auto;       
+  text-align: left;       
 }
 
 .code-content p {
@@ -34,18 +31,30 @@
 .tabs-buttons {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap; /* para que bajen si no entran */
+  flex-wrap: wrap; 
+   border-bottom: 2px solid #333; 
 }
 
 .tabs-buttons button {
-  background: #333;
-  color: white;
-  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;               
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-bottom: none;       
   padding: 0.5rem 1rem;
-  border-radius: 6px;
+  border-radius: 8px 8px 0 0; 
   cursor: pointer;
+  color: #ccc;
+  transition: background 0.2s, color 0.2s;
 }
 
-.tabs-buttons button.active {
-  background: #007bff;
+.tabs-buttons button:hover {
+  background: #3a3a3a;
+  color: white;
 }
+
+
+
+
+

@@ -1,6 +1,13 @@
 import React, { ReactNode } from 'react';
 import CodeTabs from './CodeTabs';
 import styles from "@/app/css/contenedor.module.css"
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],  // adapta si tienes otros subsets
+  weight: '400',       // adapta a los pesos que necesites
+  style: 'normal'
+});
 
 interface MenuCardsProps {
     title: string;

@@ -12,8 +12,8 @@
     box-sizing: border-box;
     overflow-x: hidden;
     border-radius: 12px;
-    height: auto;          /* 🔑 quitamos el alto fijo */
-    overflow-y: visible;   /* 🔑 el scroll no va acá */
+    height: auto;          
+    overflow-y: visible;   
 }
 
 .code-container{
@@ -27,6 +27,8 @@
 .menu-title{
   margin-bottom: 15px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 @media (max-width: 650px) {

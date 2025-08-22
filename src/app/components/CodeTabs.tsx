@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import styles from "@/app/css/codetabs.module.css"
+import { FaReact } from "react-icons/fa";
+import { SiJavascript, SiHtml5, SiCss3 } from "react-icons/si";
 
 interface CoderTabsProps {
     reactCode: string;
@@ -34,27 +36,38 @@ const CodeTabs: React.FC<CoderTabsProps> = ({ reactCode, javascriptCode, cssCode
                 <div className={styles["tabs-buttons"]}>
                     <button
                         onClick={() => setActiveTab('react')}
-                        className={activeTab === 'react' ? 'active' : ''}
+                        style={{
+                            borderColor: activeTab === 'react' ? "rgba(31, 212, 244, 1)" : "#444"
+                        }}
                     >
-                        React
+                        <FaReact color="rgba(31, 212, 244, 1)" />
                     </button>
+
                     <button
                         onClick={() => setActiveTab('javascript')}
-                        className={activeTab === 'javascript' ? 'active' : ''}
+                        style={{
+                            borderColor: activeTab === 'javascript' ? "rgba(224, 238, 31, 1)" : "#444"
+                        }}
                     >
-                        JavaScript
+                        <SiJavascript color="rgba(224, 238, 31, 1)" />
                     </button>
+
                     <button
                         onClick={() => setActiveTab('html')}
-                        className={activeTab === 'html' ? 'active' : ''}
+                        style={{
+                            borderColor: activeTab === 'html' ? "rgba(255, 144, 25, 1)" : "#444"
+                        }}
                     >
-                        HTML
+                        <SiHtml5 color="rgba(255, 144, 25, 1)" />
                     </button>
+
                     <button
                         onClick={() => setActiveTab('css')}
-                        className={activeTab === 'css' ? 'active' : ''}
+                        style={{
+                            borderColor: activeTab === 'css' ? "rgba(47, 123, 255, 1)" : "#444"
+                        }}
                     >
-                        CSS
+                        <SiCss3 color="rgba(47, 123, 255, 1)" />
                     </button>
                 </div>
                 <div className={styles["code-content"]}>
