@@ -28,11 +28,13 @@ const MenuCard: React.FC<MenuCardsProps> = ({
 }) => {
     return (
         <div className={styles["menu-card"]}>
+            <div className={styles["children-texto"]}>
             <div className={styles["menu-preview-interactive"]}>
                 {children}
             </div>
 
             <h3 className={styles["menu-title"]}>{title}</h3>
+            </div>
             <div className={styles["code-container"]}>
                 <CodeTabs
                 reactCode={reactCode}

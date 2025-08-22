@@ -1,9 +1,9 @@
-import MenuPrueba from "../components/menus/MenuPrueba"
+import MenuOne from "../components/menus/MenuOne"
 
 export const menuData = [
     {
         id: 1,
-        component: <MenuPrueba />,
+        component: <MenuOne />,
         title: "Menu ejemplo2",
         reactCode: `
           import React, { useState } from 'react';
@@ -101,7 +101,7 @@ export const menuData = [
     },
     {
         id: 2,
-        component: <MenuPrueba />,
+        component: <MenuOne />,
         title: "Menu ejemplo",
         reactCode: `
           import React, { useState } from 'react';
