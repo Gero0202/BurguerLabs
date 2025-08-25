@@ -38,7 +38,7 @@ export const menuData = [
             );
           } 
         `,
-    javascripCode: `
+    javascriptCode: `
           const toggleBtn = document.getElementById("toggleBtn");
           const navMenu = document.getElementById("navMenu");
 
@@ -203,7 +203,7 @@ export const menuData = [
 
           export default MenuNexus; 
         `,
-    javascripCode: `
+    javascriptCode: `
           const menuToggle = document.getElementById("menu-toggle");
           const menu = document.getElementById("menu");
           const overlay = document.getElementById("menu-overlay");
@@ -455,7 +455,7 @@ export const menuData = [
 
           export default MenuVertex;
     `,
-    javascripCode: `
+    javascriptCode: `
           const menuToggle = document.getElementById("menu-toggle");
           const menu = document.getElementById("menu");
           const overlay = document.getElementById("menu-overlay");
@@ -757,7 +757,7 @@ export const menuData = [
 
           export default MenuAxis;
     `,
-    javascripCode: `
+    javascriptCode: `
           const menuToggle = document.getElementById("menu-toggle");
           const menu = document.getElementById("menu");
           const overlay = document.getElementById("menu-overlay");
@@ -1047,7 +1047,7 @@ export const menuData = [
 
         export default MenuLocus;
     `,
-    javascripCode: `
+    javascriptCode: `
         const menuToggle = document.getElementById("menu-toggle");
         const menu = document.getElementById("menu");
         const overlay = document.getElementById("menu-overlay");
@@ -1370,7 +1370,7 @@ export const menuData = [
 
           export default MenuVector;
     `,
-    javascripCode: `
+    javascriptCode: `
         const menuToggle = document.getElementById("menu-toggle");
         const menu = document.getElementById("menu");
         const overlay = document.getElementById("menu-overlay");

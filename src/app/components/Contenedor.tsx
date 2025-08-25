@@ -4,8 +4,8 @@ import styles from "@/app/css/contenedor.module.css"
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
-  subsets: ['latin'],  // adapta si tienes otros subsets
-  weight: '400',       // adapta a los pesos que necesites
+  subsets: ['latin'],  
+  weight: '400',       
   style: 'normal'
 });
 

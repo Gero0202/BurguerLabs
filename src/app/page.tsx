@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import { Kanit, Dancing_Script } from "next/font/google";
 import Contenedor from "./components/Contenedor";
@@ -31,15 +30,15 @@ export default function Home() {
       <div className={styles["cards-section"]}>
         {menuData.map((menu, index) => (
           <div id={index === 0 ? "first-card" : undefined} key={menu.id}>
-          <Contenedor
-            // key={menu.id}
-            children={menu.component}
-            title={menu.title}
-            reactCode={menu.reactCode}
-            javascriptCode={menu.javascripCode}
-            htmlcode={menu.htmlCode}
-            cssCode={menu.cssCode}
-          />
+            <Contenedor
+              title={menu.title}
+              reactCode={menu.reactCode}
+              javascriptCode={menu.javascriptCode}
+              htmlcode={menu.htmlCode}
+              cssCode={menu.cssCode}
+            >
+              {menu.component}
+            </Contenedor>
           </div>
         ))}
       </div>
