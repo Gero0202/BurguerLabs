@@ -37,6 +37,9 @@ export default function Home() {
           cssCode={menu.cssCode}
         />
       ))}
+      <footer className={styles["footer"]}>
+  <p>Creado por Geronimo Tortosa</p>
+</footer>
     </>
   );
 }
