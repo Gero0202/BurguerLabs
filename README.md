@@ -19,7 +19,7 @@ Este proyecto es una colección de menus hamburguesa desarrollados con Next.js y
 
 ---
 
-## Como colaborar
+## 🤝 Como colaborar
 
 Si deseas agregar un nuevo menú:
 
