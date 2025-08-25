@@ -23,23 +23,29 @@ export default function Home() {
 
         <div className={`${styles["div-text-button"]} ${edu.className}`}>
           <p>Easy to integrate, responsive, and fully customizable.</p>
-          <button>Go!</button>
+          <a href="#first-card">
+            <button>Go!</button>
+          </a>
         </div>
       </div>
-      {menuData.map((menu) =>(
-        <Contenedor
-          key={menu.id}
-          children={menu.component}
-          title={menu.title}
-          reactCode={menu.reactCode}
-          javascriptCode={menu.javascripCode}
-          htmlcode={menu.htmlCode}
-          cssCode={menu.cssCode}
-        />
-      ))}
+      <div className={styles["cards-section"]}>
+        {menuData.map((menu, index) => (
+          <div id={index === 0 ? "first-card" : undefined} key={menu.id}>
+          <Contenedor
+            // key={menu.id}
+            children={menu.component}
+            title={menu.title}
+            reactCode={menu.reactCode}
+            javascriptCode={menu.javascripCode}
+            htmlcode={menu.htmlCode}
+            cssCode={menu.cssCode}
+          />
+          </div>
+        ))}
+      </div>
       <footer className={styles["footer"]}>
-  <p>Creado por Geronimo Tortosa</p>
-</footer>
+        <p>Creado por Geronimo Tortosa</p>
+      </footer>
     </>
   );
 }

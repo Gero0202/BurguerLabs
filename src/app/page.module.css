@@ -65,12 +65,44 @@
   transform: scale(0.98);               
 }
 
+.cards-section {
+
+  padding: 100px;
+   /* Color de fondo base */
+  background-color: #ffffff; 
+
+  /* Patrón de líneas sutiles */
+  background-image: 
+    linear-gradient(135deg, rgba(0,0,0,0.05) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(0,0,0,0.05) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(0,0,0,0.05) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(0,0,0,0.05) 25%, transparent 25%);
+
+  /* Posición y tamaño del patrón */
+  background-position: 
+    0 0, 
+    10px 0, 
+    10px -10px, 
+    0 10px;
+  background-size: 2px92px;
+
+  /* La propiedad clave: Fija el fondo al viewport */
+  background-attachment: fixed; 
+}
+
+
+
 .footer {
   border-top: 1px solid #ccc; 
   padding: 15px;
   text-align: center;
   font-size: 14px;
   color: #555;
-  margin-top: 40px; 
   font-family: 'Montserrat';
+}
+
+@media (max-width: 800px) {
+  .cards-section{
+    padding: 0;
+  }
 }
