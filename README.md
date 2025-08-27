@@ -18,6 +18,10 @@ Este proyecto es una colección de menus hamburguesa desarrollados con Next.js y
 - Basado en Next.js, lo que permite optimización, routing y SSR.
 
 ---
+## 🚀 Deploy 
+- [Vercel](https://burguer-labs.vercel.app/).
+
+---
 
 ## 🤝 Como colaborar
 
